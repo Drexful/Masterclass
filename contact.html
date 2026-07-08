@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a mobile detail with Masterclass Detailing Co. We serve all of Southwest Florida. Call (239) 269-3095 or send us a message.">
+  <title>Contact & Book | Masterclass Detailing Co.</title>
+  <link rel="icon" href="Logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .contact-section {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 5rem 2rem 6rem;
+    }
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 3rem;
+      background: var(--bg-3);
+      border: 1px solid var(--gold);
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+    .form-success h3 { color: var(--gold); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .form-success p { color: var(--text-muted); font-size: 0.9rem; }
+    .service-area-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+    .service-area-list li {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .service-area-list li::before {
+      content: '◆';
+      color: var(--gold);
+      font-size: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><img src="Logo.png" alt="Masterclass Detailing Co."></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Our Work</a></li>
+      <li><a href="contact.html" class="nav-book">Book Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Our Work</a>
+    <a href="contact.html" class="mobile-book">Book Now</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1 class="page-header-title">Book a <span>Detail</span></h1>
+    <p class="page-header-sub">Reach out and we'll get you scheduled — fast.</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="contact-section">
+    <div class="contact-grid">
+
+      <!-- INFO COLUMN -->
+      <div class="contact-info fade-in">
+
+        <div class="contact-item">
+          <span class="contact-label">Call or Text</span>
+          <span class="contact-value">
+            <a href="tel:2392693095">(239) 269-3095</a>
+          </span>
+          <p class="contact-note">Best way to get a quick response. Calls and texts both welcome.</p>
+        </div>
+
+        <a href="tel:2392693095" class="phone-cta">
+          📞&nbsp; (239) 269-3095
+        </a>
+
+        <div class="contact-item">
+          <span class="contact-label">Service Area</span>
+          <span class="contact-value">Southwest Florida</span>
+          <ul class="service-area-list">
+            <li>Naples</li>
+            <li>Fort Myers</li>
+            <li>Cape Coral</li>
+            <li>Bonita Springs</li>
+            <li>Marco Island</li>
+            <li>Estero</li>
+            <li>Ave Maria</li>
+            <li>Lehigh Acres</li>
+          </ul>
+          <p class="contact-note" style="margin-top: 0.6rem;">Not sure if we cover your area? Just call — we'll figure it out.</p>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">How It Works</span>
+          <p class="contact-note" style="font-size: 0.88rem; line-height: 1.75; color: rgba(240,240,240,0.7);">
+            We come to <em>you</em>. Tell us your address, your vehicles, and what service you need. We'll show up ready to work — no drop-off, no hassle, no strangers driving your car.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- FORM COLUMN -->
+      <div class="fade-in delay-1">
+        <form class="contact-form" id="contactForm" action="mailto:masterclassdetailingco@gmail.com" method="post" enctype="text/plain">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(239) 000-0000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Service Address</label>
+            <input type="text" id="address" name="address" placeholder="1234 Main St, Naples, FL 34105">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service...</option>
+              <option value="full-detail">Full Detail (Interior + Exterior)</option>
+              <option value="exterior">Exterior Detail</option>
+              <option value="interior">Interior Detail</option>
+              <option value="paint-correction">Paint Correction</option>
+              <option value="fleet">Fleet Detailing</option>
+              <option value="ceramic">Ceramic Coating / Protection</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="vehicles">Vehicle(s)</label>
+            <input type="text" id="vehicles" name="vehicles" placeholder="e.g. 2022 Ferrari 360 + 2020 Toyota Tacoma">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Anything Else?</label>
+            <textarea id="message" name="message" placeholder="Let us know any specific concerns, condition of the vehicle, preferred date, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center; font-size: 0.85rem; padding: 1rem;">
+            Send Message
+          </button>
+
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <h3>Message Sent!</h3>
+          <p>We'll be in touch soon. For the fastest response, give us a call at <a href="tel:2392693095" style="color: var(--gold);">(239) 269-3095</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="index.html"><img src="Logo.png" alt="Masterclass Detailing Co."></a>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="footer-phone">
+          <a href="tel:2392693095">(239) 269-3095</a>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Masterclass Detailing Co. All rights reserved.</p>
+        <p class="footer-tagline">Southwest Florida's Premier Mobile Detailer</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Show success message after form submit (mailto fallback)
+    document.getElementById('contactForm')?.addEventListener('submit', function() {
+      setTimeout(() => {
+        document.getElementById('formSuccess').style.display = 'block';
+      }, 500);
+    });
+  </script>
+</body>
+</html>

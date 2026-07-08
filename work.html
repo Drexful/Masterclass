@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="See the work — Masterclass Detailing Co. gallery of completed details across Southwest Florida. Paint, rims, interior & more.">
+  <title>Our Work | Masterclass Detailing Co.</title>
+  <link rel="icon" href="Logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       INSTAGRAM FEED SETUP — Behold.so (free tier available)
+       ───────────────────────────────────────────────────────────────────
+       To connect your Instagram feed automatically:
+
+       1. Go to https://behold.so and create a free account
+       2. Click "New Feed" → connect your Instagram account
+       3. Customize the layout (grid, gap, post count, etc.)
+       4. Click "Publish", then copy your Feed ID (looks like: AbCd1234...)
+       5. Replace YOUR_FEED_ID_HERE below with your actual Feed ID
+       6. Delete the #insta-placeholder div — the feed will appear instead
+
+       That's it! Every new post on Instagram will show up here automatically.
+  ═══════════════════════════════════════════════════════════════════ -->
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><img src="Logo.png" alt="Masterclass Detailing Co."></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Our Work</a></li>
+      <li><a href="contact.html" class="nav-book">Book Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Our Work</a>
+    <a href="contact.html" class="mobile-book">Book Now</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1 class="page-header-title">Our <span>Work</span></h1>
+    <p class="page-header-sub">Every result, straight from Instagram. Updated automatically.</p>
+  </div>
+
+  <!-- INSTAGRAM FEED AREA -->
+  <div class="insta-wrap fade-in">
+
+    <!-- ─── STEP 1: Once Behold is set up, replace this block with the embed ─── -->
+    <div id="insta-placeholder" class="insta-placeholder">
+      <h3>Instagram Feed — Setup Required</h3>
+      <p>
+        This section will automatically display every photo posted to the Masterclass Detailing Instagram — no separate posting needed. Follow the steps below to connect it (takes about 5 minutes).
+      </p>
+      <div class="setup-steps">
+        <p>Quick Setup Guide</p>
+        <ol>
+          <li>Go to <a href="https://behold.so" target="_blank" rel="noopener">behold.so</a> and create a free account</li>
+          <li>Click <strong>"New Feed"</strong> and connect your Instagram account</li>
+          <li>Choose grid layout, set the post count you want</li>
+          <li>Click <strong>"Publish"</strong> and copy your <strong>Feed ID</strong></li>
+          <li>Open <code>work.html</code> and follow the comment instructions</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ─── STEP 2: Paste your Behold embed here (replace YOUR_FEED_ID_HERE) ─── -->
+    <!--
+    <div data-behold-id="YOUR_FEED_ID_HERE"></div>
+    <script src="https://w.behold.so/widget.js" type="module"></script>
+    -->
+
+  </div>
+
+  <!-- FOLLOW CTA -->
+  <div class="insta-follow-strip">
+    <div class="ig-icon">📸</div>
+    <h3>Follow Along on Instagram</h3>
+    <p>See every detail, every transformation, every finish — as it happens.</p>
+    <!--
+      Replace the href below with the actual Instagram profile URL.
+      Example: https://www.instagram.com/masterclassdetailingco
+    -->
+    <a href="https://www.instagram.com/masterclassdetailingco" target="_blank" rel="noopener" class="btn btn-gold">
+      Follow @masterclassdetailingco
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="index.html"><img src="Logo.png" alt="Masterclass Detailing Co."></a>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="footer-phone">
+          <a href="tel:2392693095">(239) 269-3095</a>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Masterclass Detailing Co. All rights reserved.</p>
+        <p class="footer-tagline">Southwest Florida's Premier Mobile Detailer</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

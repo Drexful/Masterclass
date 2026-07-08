@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\roger\\\\Documents\\\\Web Dev\\\\Masterclass\\\\css\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\roger\\\\Documents\\\\Web Dev\\\\Masterclass\\\\js\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\roger\\\\Documents\\\\Web Dev\\\\Masterclass\\\\css\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"c:\\\\Users\\\\roger\\\\Documents\\\\Web Dev\\\\Masterclass\\\\js\")"
+    ]
+  }
+}
