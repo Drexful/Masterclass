@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "masterclass-website",
+  "name": "masterclass",
   "compatibility_date": "2026-07-08",
   "assets": {
     "directory": "./"
